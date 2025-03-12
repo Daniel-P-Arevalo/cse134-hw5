@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/base.css"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/about.css"> 
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="/scripts/theme.js"></script>
+    <title>About Me</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 style="margin-right: auto">About Me</h1>
+      <nav class="header-nav">
+        <a href="/index.html" class="header-link">Home</a>
+        <a href="/Portfolio.html" class="header-link">Portfolio</a>
+        <a href="/About.html" id="selected" class="header-link">About Me</a>
+      </nav>
+    </header>
+    <hr>
+
+    <main>
+      <section id="bio">
+        <h2>Daniel Arevalo</h2>
+        <picture>
+          <source srcset="/assets/selfie.webp" media="(max-width: 425px)" width="225" height="275">
+          <source srcset="/assets/selfie.webp" media="(max-width: 768px)" width="300" height="350">
+          <source srcset="/assets/selfie.webp" media="(max-width: 1024px)" width="400" height="450">
+          <img src="/assets/selfie.webp" alt="Me, Daniel Arevalo, wearing a black shirt in front of a white background" width="325" height="400">
+        </picture>
+
+        <h3>Contact Info:</h3>
+        <address>
+          Email: dparevalo@ucsd.edu<br>
+          Phone: +1 (619) 569-0837
+        </address>
+      
+        <p>
+          I'm Daniel Arevalo a senior computer science student studying at the University of California, San Diego. 
+          I have a great interest in learning new things about the field of computer science and 
+          I'm always look for more opportunities to gain experience in the field.
+        </p>
+      </section>
+      <hr>
+      
+      <style>
+        @scope {
+          h3 {
+            text-decoration: underline;
+          }
+        }
+      </style>
+
+      <h2 style="margin-bottom: 0em;">Skills</h2>
+      <section id="skills">
+        <h2 style="display: none;">Skills</h2>
+        <section style="margin-right: 2dvw;">
+  	      <h3>Technical Skills</h3>
+          <ul style="margin-top: 0em;">
+            <li>Python</li>
+            <li>Java</li>
+            <li>PostgresSQL</li>
+            <li>Unix</li>
+          </ul>
+        </section>
+        
+        <section style="margin-left: 2dvw;">
+  	      <h3>Personal Strengths</h3>
+          <ol style="margin-top: 0em;">
+            <li>Fast learner</li>
+            <li>Works well under pressure</li>
+            <li>Eagerness to learn</li>
+          </ol>
+        </section>
+      </section>
+      <hr>
+      
+      <section style="margin-left: 1rem;">
+        <h2 style="margin-left: 0rem;">Education</h2>
+        <span><b>University of California, San Diego</b></span><br>
+        <i>September 2021 - Present</i><br>
+        B.S. Computer Science<br>
+  
+        <p>
+          I'm a senior currently studying for a bachelor's degree in computer science at the 
+          University of California, San Diego. I'm currently planning to graduate in June of 2025.
+        </p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Contact Me</h2>
+        <form method="post" action="https://httpbin.org/post">
+          <fieldset>
+            <label for="name">Name (required)</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" pattern="^[a-zA-z .'\-]+$" required>
+          </fieldset>
+          
+          <fieldset>
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="email" placeholder="JohnDoe@gmail.com" required>
+          </fieldset>
+
+          <fieldset>
+            <label for="comments">Comments (required)</label>
+            <textarea name="comments" id="comments" placeholder="I'd like to contact you about..." maxlength="1000" required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <input type="hidden" id="possible_bot" name="possible_bot" value="true">
+          </fieldset>
+
+          <fieldset>
+            <input type="hidden" id="form-errors" name="form-errors" value="">
+          </fieldset>
+
+          <output id="errors" name="errors" for="name email comments" data-empty="true"></output>
+          <output id="info" name="info" for="name email comments"></output>
+
+          <button id="form-submit">Send</button>
+        </form>
+        <script src="/scripts/form-validation.js"></script>
+            
+      </section>
+    </main>
+
+    <hr>
+    <footer>
+      <h3>Additional Links</h3>
+      <nav>
+        <a href="https://linkedin.com/in/daniel-arevalo-55a005337" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/Daniel-P-Arevalo" class="footer-link">Github</a>
+      </nav>
+    </footer>
+  </body>
+</html>

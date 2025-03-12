@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/base.css"> 
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="/scripts/theme.js"></script>
+    <style>
+      h2 {
+        text-decoration: underline;
+        margin-bottom: 0em;
+      }
+      p {
+        margin-top: 0em;
+      }
+      section.project {
+        margin-left: 1rem;
+        .project-date {
+          font-style: italic;
+        }
+        .project-link {
+          text-decoration: underline;
+        }
+      }
+      button.project {
+        font-size: 1em;
+        background-color: var(--very-light-gray, lightgray);
+        border-color: navy;
+        font-family: 'Courier New', Tahoma, 'Lucida Grande', Times;
+        margin-left: 1rem;
+      }
+    </style>
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 style="margin-right: auto">Portfolio</h1>
+      <nav class="header-nav">
+        <a href="/index.html" class="header-link">Home</a>
+        <a href="/Portfolio.html" id="selected" class="header-link">Portfolio</a>
+        <a href="/About.html" class="header-link">About Me</a>
+      </nav>
+    </header>
+    <hr>
+
+    <main>
+      <section class="project">
+        <hgroup>
+          <h2 style="margin-left: 0rem">Project 1 - AI Song Genre Predictions</h2>
+          <p class="project-date">September, 2024 - December, 2024</p>
+        </hgroup>
+        <a href="https://github.com/brandoluu/CSE_151A_Project" class="project-link">Project Repository</a><br><br>
+        <p>
+          In this project me and my team used various utilized various machine learning methods such <abbr>SVMs</abbr> 
+          (<i>Support Vector Machines</i>), <abbr>KNN</abbr> (<i>K-Nearest Neighbors</i>), and <i>Decision Trees</i> to create a 
+          machine learning model that could predict the genre of a song given various metrics of that song 
+          such as the length of the song, the number of instrument, and tempo changes. 
+        </p>
+
+        <b>Some of the Data Exploration Performed on the Dataset:</b><br>
+        <picture>
+          <source srcset="/assets/histogram.webp" media="(max-width: 425px)" width="275" height="200">
+          <source srcset="/assets/histogram.webp" media="(max-width: 768px)" width="700" height="400">
+          <source srcset="/assets/histogram.webp" media="(max-width: 1024px)" width="800" height="500">
+          <img src="/assets/histogram.webp" alt="Histogram comparing music tempo with genre" width="750" height="400">
+        </picture>
+
+        <br><br><b>Visualization of the KNN Model Results:</b><br>
+        <picture>
+          <source srcset="/assets/KNN.webp" media="(max-width: 425px)" width="275" height="200">
+          <source srcset="/assets/KNN.webp" media="(max-width: 768px)" width="650" height="450">
+          <source srcset="/assets/KNN.webp" media="(max-width: 1024px)" width="750" height="550">
+          <img src="/assets/KNN.webp" alt="Visualization of results from K-Nearest Neighbors model with PCA" width="600" height="400">
+        </picture>
+      </section>
+
+      <hr>
+
+      <section class="project">
+        <hgroup>
+          <h2 style="margin-left: 0rem">Project 2 - SayIt Assistant</h2>
+          <p class="project-date">April, 2023 - June, 2023</p>
+        </hgroup>
+        <p>
+          In this project me and my time utilized ChatGPT to create an AI assistant application. This application
+          utilized voice recognition software to easy hands-free answering from the assistant. Along with this the
+          application saved the user's questions and their answers allowing for easy future review.
+        </p>
+      </section>
+      <button class="project">Back</button>
+      <button class="project">Forward</button>
+      <script id="sliderPlaceholder"></script>
+    </main>
+
+    <hr>
+    <footer>
+      <h3>Additional Links</h3>
+      <nav>
+        <a href="https://linkedin.com/in/daniel-arevalo-55a005337" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/Daniel-P-Arevalo" class="footer-link">Github</a>
+      </nav>
+    </footer>
+  </body>
+</html>

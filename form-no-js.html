@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/base.css"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/about.css"> 
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>No JavaScript Contact Form</title>
+  </head>
+
+  <body>
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <form method="post" action="https://httpbin.org/post">
+              <fieldset>
+                <label for="name">Name (required)</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" pattern="^[a-zA-z .'\-]+$" required>
+              </fieldset>
+              
+              <fieldset>
+                <label for="email">Email (required)</label>
+                <input type="email" id="email" name="email" placeholder="JohnDoe@gmail.com" required>
+              </fieldset>
+    
+              <fieldset>
+                <label for="comments">Comments (required)</label>
+                <textarea name="comments" id="comments" placeholder="I'd like to contact you about..." maxlength="1000" required></textarea>
+              </fieldset>
+    
+              <fieldset>
+                <input type="hidden" name="possible_bot" value="true">
+              </fieldset>
+    
+              <output id="errors" name="errors" for="name email comments">ERROR</output>
+              <output id="info" name="info" for="name email comments">INFORMATION</output>
+    
+              <button id="form-submit">Send</button>
+            </form>
+          </section>
+    </main>
+  </body>
+</html>
