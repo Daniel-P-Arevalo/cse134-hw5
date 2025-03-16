@@ -21,6 +21,12 @@ class ProjectCard extends HTMLElement {
                 }
                 project-card p {
                     width: 80%;
+                }
+                @media (max-width: 320px) {
+                    project-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
                 }`;
 
         const title = 'Title';
@@ -43,10 +49,10 @@ class ProjectCard extends HTMLElement {
                 <p>${description}</p>
             </div>
             <picture>
-                <source srcset="${img}" media="(max-width: 425px)" width="275" height="200">
-                <source srcset="${img}" media="(max-width: 768px)" width="650" height="450">
-                <source srcset="${img}" media="(max-width: 1024px)" width="750" height="550">
-                <img src="${img}" alt="${imgAlt}" width="600" height="400">
+                <source srcset="${img}" media="(max-width: 425px)" width="225" height="225">
+                <source srcset="${img}" media="(max-width: 768px)" width="350" height="350">
+                <source srcset="${img}" media="(max-width: 1024px)" width="500" height="500">
+                <img src="${img}" alt="${imgAlt}" width="500" height="500">
             </picture>`;
     }
 }
