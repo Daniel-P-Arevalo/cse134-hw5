@@ -23,7 +23,7 @@
           text-decoration: underline;
         }
       }
-      button.project {
+      button.load {
         font-size: 1em;
         background-color: var(--very-light-gray, lightgray);
         border-color: navy;
@@ -46,8 +46,14 @@
     <hr>
 
     <main>
+      <button class="load" id="load-local">Load Local</button>
+      <button class="load" id="load-remote">Load Remote</button>
+
+      <project-card></project-card>
+      <project-card></project-card>
+
       <script type="module" src="/scripts/project-card.js"></script>
-      <script type="module" src="/scripts/projectLoad.js"></script>
+      <script type="module" src="/scripts/cardLoad.js"></script>
     </main>
 
     <hr>
