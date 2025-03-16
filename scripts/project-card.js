@@ -16,6 +16,9 @@ class ProjectCard extends HTMLElement {
                     margin: 1em;
                     padding: 1em;
                 }
+                project-card time {
+                    font-style: italic;
+                }
                 project-card h2 {
                     margin-left: 0em;
                 }
