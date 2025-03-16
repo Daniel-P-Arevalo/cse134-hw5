@@ -23,12 +23,12 @@ class ProjectCard extends HTMLElement {
                     width: 80%;
                 }`;
 
-        const title = this.getAttribute('title') || 'Title Not Found';
-        const date = this.getAttribute('date') || 'Date Not Found';
-        const link = this.getAttribute('link') || '';
-        const description = this.getAttribute('description') || 'Description Not Found';
-        const img = this.getAttribute('img') || '';
-        const imgAlt = this.getAttribute('imgAlt') || 'Image Alt Not Found';
+        const title = 'Title';
+        const date = 'Date';
+        const link = '';
+        const description = 'Description';
+        const img = '';
+        const imgAlt = 'Image Alt';
 
         this.appendChild(style);
         this.innerHTML += `
