@@ -46,52 +46,8 @@
     <hr>
 
     <main>
-      <section class="project">
-        <hgroup>
-          <h2 style="margin-left: 0rem">Project 1 - AI Song Genre Predictions</h2>
-          <p class="project-date">September, 2024 - December, 2024</p>
-        </hgroup>
-        <a href="https://github.com/brandoluu/CSE_151A_Project" class="project-link">Project Repository</a><br><br>
-        <p>
-          In this project me and my team used various utilized various machine learning methods such <abbr>SVMs</abbr> 
-          (<i>Support Vector Machines</i>), <abbr>KNN</abbr> (<i>K-Nearest Neighbors</i>), and <i>Decision Trees</i> to create a 
-          machine learning model that could predict the genre of a song given various metrics of that song 
-          such as the length of the song, the number of instrument, and tempo changes. 
-        </p>
-
-        <b>Some of the Data Exploration Performed on the Dataset:</b><br>
-        <picture>
-          <source srcset="/assets/histogram.webp" media="(max-width: 425px)" width="275" height="200">
-          <source srcset="/assets/histogram.webp" media="(max-width: 768px)" width="700" height="400">
-          <source srcset="/assets/histogram.webp" media="(max-width: 1024px)" width="800" height="500">
-          <img src="/assets/histogram.webp" alt="Histogram comparing music tempo with genre" width="750" height="400">
-        </picture>
-
-        <br><br><b>Visualization of the KNN Model Results:</b><br>
-        <picture>
-          <source srcset="/assets/KNN.webp" media="(max-width: 425px)" width="275" height="200">
-          <source srcset="/assets/KNN.webp" media="(max-width: 768px)" width="650" height="450">
-          <source srcset="/assets/KNN.webp" media="(max-width: 1024px)" width="750" height="550">
-          <img src="/assets/KNN.webp" alt="Visualization of results from K-Nearest Neighbors model with PCA" width="600" height="400">
-        </picture>
-      </section>
-
-      <hr>
-
-      <section class="project">
-        <hgroup>
-          <h2 style="margin-left: 0rem">Project 2 - SayIt Assistant</h2>
-          <p class="project-date">April, 2023 - June, 2023</p>
-        </hgroup>
-        <p>
-          In this project me and my time utilized ChatGPT to create an AI assistant application. This application
-          utilized voice recognition software to easy hands-free answering from the assistant. Along with this the
-          application saved the user's questions and their answers allowing for easy future review.
-        </p>
-      </section>
-      <button class="project">Back</button>
-      <button class="project">Forward</button>
-      <script id="sliderPlaceholder"></script>
+      <script type="module" src="/scripts/project-card.js"></script>
+      <script type="module" src="/scripts/projectLoad.js"></script>
     </main>
 
     <hr>
