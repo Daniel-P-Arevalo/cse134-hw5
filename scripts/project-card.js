@@ -55,8 +55,8 @@ class ProjectCard extends HTMLElement {
             <picture>
                 <source srcset="${img}" media="(max-width: 425px)" width="225" height="225">
                 <source srcset="${img}" media="(max-width: 768px)" width="350" height="350">
-                <source srcset="${img}" media="(max-width: 1024px)" width="500" height="500">
-                <img src="${img}" alt="${imgAlt}" width="500" height="500">
+                <source srcset="${img}" media="(max-width: 1024px)" width="375" height="375">
+                <img src="${img}" alt="${imgAlt}" width="375" height="375">
             </picture>
         </div>`;
     }
