@@ -40,6 +40,7 @@ div {
 noscript {
     color: red;
     font-weight: bold;
+    margin-left: 1em;
 }
 a {
     color:var(--link-blue, blue);
