@@ -25,6 +25,9 @@ class ProjectCard extends HTMLElement {
                 .project-card p {
                     width: 80%;
                 }
+                .project-card a {
+                    color: 0051a2;
+                }
                 @media (max-width: 320px) {
                     .project-card {
                     display: flex;

@@ -2,13 +2,15 @@ function changeTheme (theme) {
     let root = document.documentElement;
     let toggle = document.getElementById('theme-toggle');
     let projects = document.getElementsByClassName('project-card');
+    let footerNav = document.getElementById('footer-nav');
     if (theme === 'dark') {
         localStorage.setItem('theme', 'dark');
         root.style.backgroundColor = 'var(--dark-bg-color, black)';
         root.style.color = 'var(--dark-text-color, white)';
         toggle.style.backgroundColor = 'var(--dark-theme-toggle-color, white)';
         toggle.innerText = 'Theme (Dark)';
-
+        footerNav.style.backgroundColor = 'var(--dark-footer-color, lightgray)';
+        footerNav.style.borderColor = 'var(--dark-footer-border, white)';
         for (let i = 0; i < projects.length; i++) {
             let card = projects[i];
             card.style.backgroundColor = 'var(--dark-card-bg-color, gray)';
@@ -20,6 +22,8 @@ function changeTheme (theme) {
         root.style.color = 'var(--light-text-color, black)';
         toggle.style.backgroundColor = 'var(--light-theme-toggle-color, yellow)';
         toggle.innerText = 'Theme (Light)';
+        footerNav.style.backgroundColor = 'var(--light-footer-color, white)';
+        footerNav.style.borderColor = 'var(--light-footer-border, black)';
         for (let i = 0; i < projects.length; i++) {
             let card = projects[i];
             card.style.backgroundColor = 'var(--light-card-bg-color, white)';
