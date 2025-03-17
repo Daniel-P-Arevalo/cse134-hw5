@@ -3,6 +3,18 @@
     --link-blue: color(xyz 0.05 0.05 0.5);
     --very-light-gray: color-mix(in xyz, black 20%, white 80%);
 
+    --light-bg-color: rgb(200, 230, 200);
+    --light-theme-toggle-color: yellow;
+    --light-text-color: black;
+    --light-card-bg-color: white;
+    --light-card-border: black;
+
+    --dark-bg-color: rgb(0, 15, 0);
+    --dark-theme-toggle-color: white;
+    --dark-text-color: white;
+    --dark-card-bg-color: gray;
+    --dark-card-border: white;
+
     background-color: var(--pale-green, honeydew);
 }
 * {

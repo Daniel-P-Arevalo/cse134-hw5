@@ -4,25 +4,26 @@ function changeTheme (theme) {
     let projects = document.getElementsByClassName('project-card');
     if (theme === 'dark') {
         localStorage.setItem('theme', 'dark');
-        root.style.backgroundColor = 'rgb(0, 15, 0)';
-        root.style.color = 'white';
-        toggle.style.backgroundColor = 'white';
+        root.style.backgroundColor = 'var(--dark-bg-color, black)';
+        root.style.color = 'var(--dark-text-color, white)';
+        toggle.style.backgroundColor = 'var(--dark-theme-toggle-color, white)';
         toggle.innerText = 'Theme (Dark)';
+
         for (let i = 0; i < projects.length; i++) {
             let card = projects[i];
-            card.style.backgroundColor = 'gray';
-            card.style.borderColor = 'white';
+            card.style.backgroundColor = 'var(--dark-card-bg-color, gray)';
+            card.style.borderColor = 'var(--dark-card-border, white)';
         }
-    } else {
+    } else if (theme == 'light') {
         localStorage.setItem('theme', 'light');
-        root.style.backgroundColor = 'var(--pale-green, honeydew)';
-        root.style.color = 'black';
-        toggle.style.backgroundColor = 'yellow';
+        root.style.backgroundColor = 'var(--light-bg-color, honeydew)';
+        root.style.color = 'var(--light-text-color, black)';
+        toggle.style.backgroundColor = 'var(--light-theme-toggle-color, yellow)';
         toggle.innerText = 'Theme (Light)';
         for (let i = 0; i < projects.length; i++) {
             let card = projects[i];
-            card.style.backgroundColor = 'white';
-            card.style.borderColor = 'black';
+            card.style.backgroundColor = 'var(--light-card-bg-color, white)';
+            card.style.borderColor = 'var(--light-card-border, black)';
         }
     }
 }
