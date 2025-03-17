@@ -21,6 +21,7 @@ footer {
 }
 h1 {
     margin-left: 1rem;
+    margin-right: auto;
 }
 h2 {
     text-decoration: underline;
@@ -32,6 +33,13 @@ h3 {
 }
 p {
     width: 50%;
+}
+div {
+    margin-left: 1rem;
+}
+noscript {
+    color: red;
+    font-weight: bold;
 }
 a {
     color:var(--link-blue, blue);

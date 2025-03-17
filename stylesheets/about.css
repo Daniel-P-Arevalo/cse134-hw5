@@ -12,6 +12,19 @@ section#skills {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 0em;
+}
+section#technical-skills {
+  margin-right: 1em;
+}
+section.education {
+  margin-left: 1rem;
+}
+h2.skills-list {
+  margin-bottom: 0em;
+}
+h2.education {
+  margin-left: 0rem;
 }
 h2:has(+ picture) {
   margin-bottom: 2dvh;

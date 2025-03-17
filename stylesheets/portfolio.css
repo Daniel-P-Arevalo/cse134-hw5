@@ -1,0 +1,14 @@
+h2 {
+  text-decoration: underline;
+  margin-bottom: 0em;
+}
+p {
+  margin-top: 0em;
+}
+button.load {
+  font-size: 1em;
+  background-color: var(--very-light-gray, lightgray);
+  border-color: navy;
+  font-family: 'Courier New', Tahoma, 'Lucida Grande', Times;
+  margin-left: 1rem;
+}
