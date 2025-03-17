@@ -6,7 +6,7 @@ class ProjectCard extends HTMLElement {
     connectedCallback() {
         const style = document.createElement('style');
         style.textContent = `
-                project-card {
+                .project-card {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -16,17 +16,17 @@ class ProjectCard extends HTMLElement {
                     margin: 1em;
                     padding: 1em;
                 }
-                project-card time {
+                .project-card time {
                     font-style: italic;
                 }
-                project-card h2 {
+                .project-card h2 {
                     margin-left: 0em;
                 }
-                project-card p {
+                .project-card p {
                     width: 80%;
                 }
                 @media (max-width: 320px) {
-                    project-card {
+                    .project-card {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
@@ -41,7 +41,8 @@ class ProjectCard extends HTMLElement {
 
         this.appendChild(style);
         this.innerHTML += `
-            <div class="project-text">
+        <div class="project-card">
+            <section class="project-text">
                 <hgroup>
                     <h2>${title}</h2>
                     <time>${date}</time>
@@ -50,13 +51,14 @@ class ProjectCard extends HTMLElement {
                 <a href="${link}">Further Reading</a>
                 <br><br>
                 <p>${description}</p>
-            </div>
+            </section>
             <picture>
                 <source srcset="${img}" media="(max-width: 425px)" width="225" height="225">
                 <source srcset="${img}" media="(max-width: 768px)" width="350" height="350">
                 <source srcset="${img}" media="(max-width: 1024px)" width="500" height="500">
                 <img src="${img}" alt="${imgAlt}" width="500" height="500">
-            </picture>`;
+            </picture>
+        </div>`;
     }
 }
 
