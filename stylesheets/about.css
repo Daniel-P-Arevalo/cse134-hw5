@@ -17,13 +17,6 @@ h2:has(+ picture) {
   margin-bottom: 2dvh;
   text-decoration: underline;
 }
-@media (max-width: 320px) {
-  section#skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-}
 form {
   display: flex;
   flex-direction: column;
@@ -74,4 +67,44 @@ output#info {
 }
 *:user-invalid {
   border: 2px solid red
+}
+@media (max-width: 320px) {
+  section#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  input {
+    width: 50%;
+  }
+  textarea {
+    width: 75%;
+  }
+  button#form-submit {
+    width: 50%;
+    height: 1.5em;
+  }
+  output {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  section#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  input {
+    width: 25%;
+  }
+  textarea {
+    width: 75%;
+  }
+  button#form-submit {
+    width: 25%;
+    height: 2em;
+  }
+  output {
+    width: 75%;
+  }
 }
